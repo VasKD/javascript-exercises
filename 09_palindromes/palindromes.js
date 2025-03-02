@@ -3,7 +3,7 @@ const palindromes = function (str) {
     // split letters into an array and filter out invalid characters
     let arr = str.toLowerCase().split('').filter(char => /[a-z0-9]/.test(char));
 
-    // compare original with reversed string anf
+    // return comparison original with reversed string
     return arr.join('') === arr.reverse().join('');
 };
 
